@@ -9,13 +9,23 @@ Here are some info about GLC-Management-System application:
 
 * Steps to run the application
 	
-	- clone the app from github
+	- Clone the app from github
 
 			https://github.com/revtezera/Glc-management-system.git
 
-	- Install rails
+	- Install rvm (Ruby version management system) - Check how to from..
+			https://rvm.io/rvm/install
+	
+	- Install ruby (using rvm)
+	
+			$ sudo rvm install 2.2.7
 
-			Check Guide from eg. http://installrails.com/
+	- Run bundle install to install all the necessary gems to the app.
+			
+			$ gem install bundler
+			$ bundle install
+			
+			Note: rails and mysql along with others must be installed now when the second command is run.
 
 	- Install mysql DB from command line and run the following command to create the db for Glc-management-system
 
@@ -24,11 +34,7 @@ Here are some info about GLC-Management-System application:
 	- Run migraton for tables to be formed
 
 			$ rake db:migrate
-
-	- Run bundle install to install all the necessary gems to the app.
-
-			$ bundle install
-
+	
 	- Run the server in localhost
 
 		        $ rails server -p3000
