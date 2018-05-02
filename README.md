@@ -1,6 +1,6 @@
 # README
 
-GLC-Management-System
+## GLC-Management-System
 
 This README document has information on the steps necessary to get the
 application up and running.
@@ -19,19 +19,19 @@ Here are some info about GLC-Management-System application:
 
 	- Install mysql DB from command line and run the following command to create the db for Glc-management-system
 
-		rake db:create
+		$ rake db:create
 
 	- Run migraton for tables to be formed
 
-		rake db:migrate
+		$ rake db:migrate
 
 	- Run bundle install to install all the necessary gems to the app.
 
-		bundle install
+		$ bundle install
 
 	- Run the server in localhost
 
-		rails server -p3000 
+		$ rails server -p3000 
 
 	- Check the app from the browser
 
@@ -51,13 +51,11 @@ Here are some info about GLC-Management-System application:
 
 * Configuration
 
-* Database creation
+* Database creation and initialization
 
-	- Mysql database
-	Use command: rake db:create To create the databases
-
-
-* Database initialization
+	Use command: 
+	$ rake db:create 
+	To create Mysql database
 
 * How to run the test suite
 
