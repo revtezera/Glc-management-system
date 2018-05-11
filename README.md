@@ -116,15 +116,14 @@ Then Finaly follow the steps above:
 
 	- You are good to go !!
 
-On windows ruby "2.2.7" doesn't exist. So change the Gemfile to ruby "2.3.3" and run "bundle install" on the git bash.
+	On windows ruby "2.2.7" doesn't exist. So change the Gemfile to ruby "2.3.3" and run "bundle install" on the git bash.
 
-Also during "db:migrate" you'll get an error. So add "gem 'wdm', '>= 0.1.0' if Gem.win_platform?" in the Gemfile.
+	Also during "db:migrate" you'll get an error. So add "gem 'wdm', '>= 0.1.0' if Gem.win_platform?" in the Gemfile.
 
-Then you are good to go! 
+	Then you are good to go! 
 
-I'm not sure what kind of collisions the project might have during the development process. So if it's possible update your ruby versions to 2.3.3.
+	I'm not sure what kind of collisions the project might have during the development process. So if it's possible update your ruby versions to 2.3.3.
 
-I haven't commited the Gemfile yet. But if we agree I can do that too.
-
+	I have commited the Gemfile on a new branch "for-windows".
 
              
